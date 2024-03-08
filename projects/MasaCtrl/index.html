@@ -329,7 +329,7 @@
   <h2 class="title is-3 has-text-centered"> Results </h2>
       <!-- Synthetic Results -->
       <div class="column is-full-width">
-        <h2 class="title is-4">Synthetic Results</h2>          
+        <h2 class="title is-4">Consistent Synthesis Results</h2>          
         <img src="static/assets/results_synthetic.png" width="100%">
         <p>
           Consistent synthesis results of different methods on the synthetic images. From left to right: the source image text
@@ -340,7 +340,7 @@
 
       <!-- Real image editing -->
       <div class="column is-full-width">
-        <h2 class="title is-4">Real Image Editing</h2>
+        <h2 class="title is-4">Real Image Editing Results</h2>
         <img src="static/assets/results_real.png" width="100%">
         <p>
           Real image editing results of different editing methods on real images. 
@@ -360,7 +360,7 @@
 
       <!--/ Generalize to other models -->
       <div class="column is-full-width">
-        <h2 class="title is-4">Results on Anything Model</h2>
+        <h2 class="title is-4">Results on Anything-v4 Model</h2>
         <img src="static/assets/angthingv4_synthetic.png" width="100%">
         <p>
           Consistent synthesis results of MasaCtrl with Anything-V4 checkpoint.
@@ -372,7 +372,7 @@
         <h2 class="title is-4">Video Synthesis Results</h2>
         <img src="static/assets/results_w_adapter_consistent.png" width="100%">
         <p>
-          With dense consistent guidance, MasaCtrl enables video synthesis. Please refer to the carousel to see the video synthesis results.
+          With dense consistent guidance, MasaCtrl enables video synthesis without fine-tuning. Please refer to the carousel to see the video synthesis results.
         </p>
       </div>
   </div>
@@ -404,14 +404,14 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{cao2023masactrl,
-      title={MasaCtrl: Tuning-Free Mutual Self-Attention Control for Consistent Image Synthesis and Editing}, 
-      author={Mingdeng Cao and Xintao Wang and Zhongang Qi and Ying Shan and Xiaohu Qie and Yinqiang Zheng},
-      year={2023},
-      eprint={2304.08465},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-    }</code></pre>
+    <pre><code>@InProceedings{Cao_2023_ICCV,
+      author    = {Cao, Mingdeng and Wang, Xintao and Qi, Zhongang and Shan, Ying and Qie, Xiaohu and Zheng, Yinqiang},
+      title     = {MasaCtrl: Tuning-Free Mutual Self-Attention Control for Consistent Image Synthesis and Editing},
+      booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+      month     = {October},
+      year      = {2023},
+      pages     = {22560-22570}
+  }</code></pre>
   </div>
 </section>
 
