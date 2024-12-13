@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="InstructMove">
+  <meta name="keywords" content="Image Editing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InstructMove</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link rel="stylesheet" href="./static/css/instructmove.css">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="./static/js/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hypernerf.github.io">
+            HyperNeRF
+          </a>
+          <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a>
+          <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav> -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Instruction-based Image Manipulation by Watching How Things Move</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/ljzycmd">Mingdeng Cao</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://ceciliavision.github.io/">Xuaner Zhang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=JD-5DKcAAAAJ">Yinqiang Zheng</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://likesum.github.io/">Zhihao Xia</a><sup>2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Tokyo &nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block"><sup>2</sup>Adobe</span>
+          </div>
+
+          <div class="column has-text-centered">
+              <span class="link-block">
+                <a href="https://arxiv.org/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (coming soon) &nbsp;</span>
+                  <svg width="12" height="12" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[8px]"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.33594 1.69479H3.75174V0.444793H10.4688V7.16187L9.21882 7.16187L9.21882 2.57968L1.80098 9.99752L0.917101 9.11363L8.33594 1.69479Z" fill="currentColor"></path></svg>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Github(coming soon) &nbsp;</span>
+                  <svg width="12" height="12" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[8px]"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.33594 1.69479H3.75174V0.444793H10.4688V7.16187L9.21882 7.16187L9.21882 2.57968L1.80098 9.99752L0.917101 9.11363L8.33594 1.69479Z" fill="currentColor"></path></svg>  
+                </a>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/assets/teaser.jpg" alt="teaser" width="100%">
+      <h2 class="subtitle has-text-centered">
+        We propose InstructMove, an instruction-based image editing model trained on frame pairs from videos with instructions generated by Multimodal LLMs. Our model excels at non-rigid editing, such as adjusting subject poses, expressions, and altering viewpoints, while maintaining content consistency. Additionally, our method supports precise, localized edits through the integration of masks, human poses, and other control mechanisms.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <!-- image demo -->
+    <div class="container"> 
+      <!-- <h2 class="title is-6", style="text-align: center;"> Consistent Synthesis and Editing Results</h2> -->
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <img src="static/assets/results_sd15/sample_1.jpg">
+        </div>
+        <div class="item item-steve">
+          <img src="static/assets/results_sd15/sample_2.jpg">
+        </div>
+        <div class="item item-steve">
+          <img src="static/assets/results_sd15/sample_3.jpg">
+        </div>
+        <div class="item item-steve">
+          <img src="static/assets/results_sd15/sample_4.jpg">
+        </div>
+        <div class="item item-steve">
+          <img src="static/assets/results_sd15/sample_5.jpg">
+        </div>
+        <div class="item item-steve">
+          <img src="static/assets/results_sd15/sample_6.jpg">
+        </div>
+        <div class="item item-steve">
+          <img src="static/assets/results_sd15/sample_7.jpg">
+        </div>
+        <div class="item item-steve">
+          <img src="static/assets/results_sd15/sample_8.jpg">
+        </div>
+        <div class="item item-steve">
+          <img src="static/assets/results_sd15/sample_9.jpg">
+        </div>
+        <div class="item item-steve">
+          <img src="static/assets/results_sd15/sample_10.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This paper introduces a novel dataset construction pipeline that samples pairs of frames from videos and uses multimodal large language models (MLLMs) to generate editing instructions for training instruction-based image manipulation models. Video frames inherently preserve the identity of subjects and scenes, ensuring consistent content preservation during editing. Additionally, video data captures diverse, natural dynamics—such as non-rigid subject motion and complex camera movements—that are difficult to model otherwise, making it an ideal source for scalable dataset construction. Using this approach, we create a new dataset to train \textbf{InstructMove}, a model capable of instruction-based complex manipulations that are difficult to achieve with synthetically generated datasets. Our model demonstrates state-of-the-art performance in tasks such as adjusting subject poses, rearranging elements, and altering camera perspectives.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<!-- Dataset section -->
+<Section>
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Dataset Construction</h2>
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+          <img src="static/assets/arch/data_pipeline.jpg">
+          <p>
+            Our data construction pipeline. (a) We begin by sampling suitable frame pairs from videos, ensuring realistic and moderate transformations. (b) These frame pairs are used to prompt Multimodal Large Language Models (MLLMs) to generate detailed editing instructions. (c) This process results in a large-scale dataset with realistic image pairs and precise editing instructions.
+          </p>
+        </div>
+      </div>
+  </div>
+</Section>
+<!-- Methods section -->
+
+
+<!-- Methods section -->
+<Section>
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Method</h2>
+      
+      <div class="column is-full-width">
+        
+        <div class="content has-text-justified">
+          <img src="static/assets/arch/model_arch.jpg">
+          <p>
+            Overview of the proposed model architecture for instruction-based image editing. The source and target images are first encoded into latent representations z<sup>s</sup> and z<sup>e</sup> using a pre-trained encoder.
+            The target latent z<sup>e</sup> is then transformed into a noisy latent z<sup>e</sup><sub>t</sub> through the forward diffusion process. We concatenate the source image latent and the noisy target latent along the width dimension to form the model input, which is fed into the denoising U-Net ϵ<sub>θ</sub> to predict a noise map. The right half of the output, corresponding to the noisy target input, is cropped and compared with the original noise map.
+          </p>
+        </div>
+      </div>
+  </div>
+</Section>
+<!-- Methods section -->
+
+
+<!-- Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+  <h2 class="title is-3 has-text-centered"> Results </h2>
+      <!-- Comparison -->
+      <div class="column is-full-width">
+        <h2 class="title is-4">Comparison</h2>          
+        <img src="static/assets/comparison.jpg" width="100%">
+        <p>
+          Existing methods struggle with complex edits such as non-rigid transformations (e.g., changes in pose and expression), object repositioning, or viewpoint adjustments.
+          They often either fail to follow the editing instructions or produce images with inconsistencies, such as identity shifts. In contrast, our method, trained on real video frames with naturalistic transformations, successfully handles these edits while maintaining consistency with the original input images.
+        </p>
+      </div>
+      <!--/ Comparison -->
+
+      <!-- Results with addtional guidance -->
+      <div class="column is-full-width">
+        <h2 class="title is-4">Results with Addtiional Controls</h2>
+        <img src="static/assets/results_additional_ctrl.jpg" width="100%">
+        <p>
+          Utilizing local mask and additional controls for localized and more precise edits.
+          (a) Our model can utilize a mask to specify which part of the image to edit, enabling localized adjustments and resolving ambiguities in the instructions.
+          (b) When combined with pretrained ControlNet, our model can accept additional inputs, such as human poses or rough sketches, to achieve precise edits in subject poses or object positioning. This level of control is not possible with previous methods.
+        </p>
+      </div>
+      <!--/ Results with addtional guidance. -->
+
+      <!-- Results on FLUX.dev -->
+      <div class="column is-full-width">
+        <h2 class="title is-4">Results of Larger Base Model (FLUX.dev)</h2>
+        <img src="static/assets/results_flux/results_flux.jpg" width="100%">
+        <p>
+          We can finetune a larger and more powerful T2I model (e.g., <strong>FLUX.dev</strong>) on our dataset using the proposed Spatial Conditioning strategy to achieve higher-quality, high-resolution image edits. 
+        </p>
+      </div>
+
+  </div>
+
+    <!-- Concurrent Work. -->
+    <!-- <div class="container is-max-desktop">
+      <div class="column is-full-width">
+        <h2 class="title is-4">Related Links</h2>
+        <p>
+        [1] <a href="https://github.com/TencentARC/T2I-AdapterT2I-Adapter">Learning Adapters to Dig out More Controllable Ability for Text-to-Image Diffusion Models</a>
+        </p>
+        <p>
+        [2] <a href="https://github.com/google/prompt-to-prompt">Prompt-to-Prompt Image Editing with Cross-Attention Control</a>
+        </p>
+        <p>
+        [3] <a href="https://github.com/ermongroup/SDEdit">SDEdit: Guided Image Synthesis and Editing with Stochastic Differential Equations</a>
+        </p>
+        <p>
+        [4] <a href="https://github.com/MichalGeyer/plug-and-play">Plug-and-Play Diffusion Features for Text-Driven Image-to-Image Translation</a>
+        </p>
+      </div>
+    </div> -->
+
+  </div>
+</section>
+<!-- Results -->
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      coming soon
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <!-- <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is modified from the <a href="https://nerfies.github.io/">Nerfies</a>, which is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
