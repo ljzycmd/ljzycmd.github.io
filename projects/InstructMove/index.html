@@ -252,7 +252,7 @@
       <div class="column is-full-width">
         <h2 class="title is-4">Comparison</h2>          
         <img src="static/assets/comparison.jpg" width="100%">
-        <p>
+        <p class="has-text-justified">
           Existing methods struggle with complex edits such as non-rigid transformations (e.g., changes in pose and expression), object repositioning, or viewpoint adjustments.
           They often either fail to follow the editing instructions or produce images with inconsistencies, such as identity shifts. In contrast, our method, trained on real video frames with naturalistic transformations, successfully handles these edits while maintaining consistency with the original input images.
         </p>
@@ -263,7 +263,7 @@
       <div class="column is-full-width">
         <h2 class="title is-4">Results with Addtiional Controls</h2>
         <img src="static/assets/results_additional_ctrl.jpg" width="100%">
-        <p>
+        <p class="has-text-justified">
           Utilizing local mask and additional controls for localized and more precise edits.
           (a) Our model can utilize a mask to specify which part of the image to edit, enabling localized adjustments and resolving ambiguities in the instructions.
           (b) When combined with pretrained ControlNet, our model can accept additional inputs, such as human poses or rough sketches, to achieve precise edits in subject poses or object positioning. This level of control is not possible with previous methods.
@@ -275,7 +275,7 @@
       <div class="column is-full-width">
         <h2 class="title is-4">Results of Larger Base Model (FLUX.dev)</h2>
         <img src="static/assets/results_flux/results_flux.jpg" width="100%">
-        <p>
+        <p class="has-text-justified">
           We can finetune a larger and more powerful T2I model (e.g., <strong>FLUX.dev</strong>) on our dataset using the proposed Spatial Conditioning strategy to achieve higher-quality, high-resolution image edits. 
         </p>
       </div>
@@ -309,8 +309,7 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>
-@misc{cao2024instructionbasedimagemanipulationwatching,
+<pre><code>@misc{cao2024instructmove,
   title={Instruction-based Image Manipulation by Watching How Things Move}, 
   author={Mingdeng Cao and Xuaner Zhang and Yinqiang Zheng and Zhihao Xia},
   year={2024},
@@ -318,8 +317,7 @@
   archivePrefix={arXiv},
   primaryClass={cs.CV},
   url={https://arxiv.org/abs/2412.12087}, 
-}
-    </code></pre>
+}</code></pre>
   </div>
 </section>
 
@@ -327,7 +325,7 @@
 <section class="section" id="Contact">
   <div class="container is-max-desktop content">
     <h2 class="title">Contact</h2>
-      If you have any questions, please contact us: <strong>mingdengcao[@]gmail.com</strong>.
+      If you have any questions, feel free to contact us: <strong>mingdengcao[AT]gmail.com</strong>.
   </div>
 </section>
 
