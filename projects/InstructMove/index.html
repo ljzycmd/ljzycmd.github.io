@@ -235,7 +235,7 @@
           <img src="static/assets/arch/model_arch.jpg">
           <p>
             Overview of the proposed model architecture for instruction-based image editing. The source and target images are first encoded into latent representations z<sup>s</sup> and z<sup>e</sup> using a pre-trained encoder.
-            The target latent z<sup>e</sup> is then transformed into a noisy latent z<sup>e</sup><sub>t</sub> through the forward diffusion process. We concatenate the source image latent and the noisy target latent along the width dimension to form the model input, which is fed into the denoising U-Net ϵ<sub>θ</sub> to predict a noise map. The right half of the output, corresponding to the noisy target input, is cropped and compared with the original noise map.
+            The target latent z<sup>e</sup> is then transformed into a noisy latent z<sup>e</sup><sub>t</sub> through the forward diffusion process. We concatenate the source image latent and the noisy target latent along the width dimension to form the model input, which is fed into the denoising U-Net (or diffusion Transformer) ϵ<sub>θ</sub> to predict a noise map. The right half of the output, corresponding to the noisy target input, is cropped and compared with the original noise map.
           </p>
         </div>
       </div>
@@ -261,7 +261,7 @@
 
       <!-- Results with addtional guidance -->
       <div class="column is-full-width">
-        <h2 class="title is-4">Results with Addtiional Controls</h2>
+        <h2 class="title is-4">Results with Additional Controls</h2>
         <img src="static/assets/results_additional_ctrl.jpg" width="100%">
         <p class="has-text-justified">
           Utilizing local mask and additional controls for localized and more precise edits.
@@ -310,13 +310,13 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
 <pre><code>@misc{cao2024instructmove,
-  title={Instruction-based Image Manipulation by Watching How Things Move}, 
-  author={Mingdeng Cao and Xuaner Zhang and Yinqiang Zheng and Zhihao Xia},
-  year={2024},
-  eprint={2412.12087},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2412.12087}, 
+    title={Instruction-based Image Manipulation by Watching How Things Move}, 
+    author={Mingdeng Cao and Xuaner Zhang and Yinqiang Zheng and Zhihao Xia},
+    year={2024},
+    eprint={2412.12087},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    url={https://arxiv.org/abs/2412.12087}, 
 }</code></pre>
   </div>
 </section>
